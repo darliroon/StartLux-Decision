@@ -4,3 +4,6 @@ bench/
 runs/
 preds/
 .DS_Store
+
+# local model weights / symlinks
+StartLux-Decision-4B
