@@ -4,6 +4,15 @@ bench/
 runs/
 preds/
 .DS_Store
+*.egg-info/
+build/
+dist/
+vllm_logs/
+bench_*.csv
+*.predictions.jsonl
+.pytest_cache/
+.venv/
+*.log
 
 # local model weights / symlinks
 StartLux-Decision-4B
