@@ -1,0 +1,13 @@
+{
+  "state": "Automated annotation check. The candidate polyline tracks the shadow of a guardrail instead of the actual curb along 60% of its length.",
+  "questions": {
+    "accept_reject": {
+      "type": "score",
+      "instructions": "Decide whether to auto-accept this annotation.",
+      "criteria": [
+        "0: reject, the line follows the wrong structure",
+        "1: accept, the line follows the true road edge"
+      ]
+    }
+  }
+}

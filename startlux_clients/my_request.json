@@ -1,0 +1,41 @@
+{
+  "state": "Frame 0966 from a driving recorder. An automated VLM produced a road-edge annotation: a polyline labeled edge_top runs near x=860 from y=385 to y=996 (right side of frame), and a polyline labeled edge_bottom runs near x=146 from y=1 to y=1000 (left side). The left edge_bottom polyline drifts from x=163 at mid-height back to x=126 near the bottom, and several consecutive bottom points are duplicated at y=997..1000. The scene contains a paved road with a curb on the left and a guardrail shadow on the right. No vehicle occludes the edges.",
+  "questions": {
+    "edge_present": {
+      "type": "noul",
+      "instructions": "Is at least one road edge clearly visible in this frame?"
+    },
+    "top_correct": {
+      "type": "noul",
+      "instructions": "Does the edge_top polyline on the right correctly follow the actual road edge along its visible length?"
+    },
+    "bottom_issue": {
+      "type": "choice",
+      "instructions": "What is the main problem with the edge_bottom polyline on the left, if any?",
+      "allow_none": true,
+      "criteria": {
+        "none": "No problem, the polyline is accurate",
+        "drift": "Spatial drift: the line progressively deviates from the edge",
+        "jitter": "Local jitter or noise without systematic drift",
+        "duplicate": "Duplicated or redundant consecutive points",
+        "wrong_structure": "Tracks the wrong structure (e.g. lane marking, shadow, guardrail)",
+        "truncated": "Incomplete: starts or ends before the visible edge ends"
+      }
+    },
+    "overall_quality": {
+      "type": "score",
+      "instructions": "Rate the overall road-edge annotation quality for this frame.",
+      "criteria": [
+        "0: unusable, edges largely wrong or missing",
+        "1: poor, one edge wrong or major systematic drift",
+        "2: acceptable, edges mostly correct with local issues",
+        "3: good, minor jitter only, edges correct along full length",
+        "4: excellent, precise and complete"
+      ]
+    },
+    "needs_review": {
+      "type": "noul",
+      "instructions": "Should this frame be sent to a human reviewer instead of being auto-accepted?"
+    }
+  }
+}

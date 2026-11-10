@@ -1,0 +1,16 @@
+{
+  "state": "Frame 0966 road-edge annotation: the left polyline follows the curb but has clear local deviations near the bottom; the right polyline is accurate. No duplicated points.",
+  "questions": {
+    "quality": {
+      "type": "score",
+      "instructions": "Rate the overall annotation quality.",
+      "criteria": [
+        "0: unusable, edges largely wrong or missing",
+        "1: poor, one edge wrong or major systematic drift",
+        "2: acceptable, edges mostly correct with local issues",
+        "3: good, minor jitter only, edges correct along full length",
+        "4: excellent, precise and complete"
+      ]
+    }
+  }
+}

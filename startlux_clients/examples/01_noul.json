@@ -1,0 +1,9 @@
+{
+  "state": "Frame 0966, road-edge annotation from an automated VLM. A continuous polyline follows the left curb; the right side is in deep shadow with no visible edge.",
+  "questions": {
+    "edge_visible": {
+      "type": "noul",
+      "instructions": "Is at least one road edge clearly visible in this frame?"
+    }
+  }
+}

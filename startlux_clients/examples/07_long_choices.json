@@ -1,0 +1,41 @@
+{
+  "state": "User note: 'I cannot log in and my password reset email never arrives.'",
+  "questions": {
+    "topic": {
+      "type": "choice",
+      "instructions": "Which support topic best matches this user note?",
+      "criteria": {
+        "topic_00": "Billing and invoices",
+        "topic_01": "Refunds and returns",
+        "topic_02": "Shipping delays",
+        "topic_03": "Order cancellation",
+        "topic_04": "Payment failure",
+        "topic_05": "Gift card issues",
+        "topic_06": "App crash on launch",
+        "topic_07": "Password reset and account lockout",
+        "topic_08": "Email change",
+        "topic_09": "Two-factor authentication",
+        "topic_10": "Profile editing",
+        "topic_11": "Notification settings",
+        "topic_12": "Data export and privacy",
+        "topic_13": "Subscription upgrade",
+        "topic_14": "Subscription cancellation",
+        "topic_15": "Coupon not working",
+        "topic_16": "Wrong item received",
+        "topic_17": "Damaged item",
+        "topic_18": "Missing package",
+        "topic_19": "Address change",
+        "topic_20": "Delivery instructions",
+        "topic_21": "Product availability",
+        "topic_22": "Size and fit",
+        "topic_23": "Product warranty",
+        "topic_24": "Technical integration / API",
+        "topic_25": "Report abuse",
+        "topic_26": "Accessibility",
+        "topic_27": "Partnership inquiry",
+        "topic_28": "Press and media",
+        "topic_29": "General feedback"
+      }
+    }
+  }
+}

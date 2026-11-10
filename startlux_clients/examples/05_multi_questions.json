@@ -1,0 +1,28 @@
+{
+  "state": {
+    "frame_id": "0966",
+    "scene": "urban road, daytime, clear weather",
+    "annotator": "qwen3.5-9b-vlm-agent-v2",
+    "lines": [
+      {"type": "edge_top", "side": "right", "points": 53, "x_range": [841, 862], "note": "smooth, near-vertical"},
+      {"type": "edge_bottom", "side": "left", "points": 99, "x_range": [126, 163], "note": "drifts at mid-height, 5 duplicated points at the bottom"}
+    ]
+  },
+  "questions": {
+    "edge_present": {"type": "noul", "instructions": "Is at least one road edge clearly visible in this frame?"},
+    "right_line_ok": {"type": "noul", "instructions": "Does the right edge_top line correctly follow the visible road edge?"},
+    "has_drift": {"type": "noul", "instructions": "Does the left edge_bottom line show systematic spatial drift?"},
+    "has_duplicate_points": {"type": "noul", "instructions": "Does the annotation contain duplicated consecutive points?"},
+    "overall_quality": {
+      "type": "score",
+      "instructions": "Rate the overall road-edge annotation quality.",
+      "criteria": [
+        "0: unusable, edges largely wrong or missing",
+        "1: poor, one edge wrong or major systematic drift",
+        "2: acceptable, edges mostly correct with local issues",
+        "3: good, minor jitter only, edges correct along full length",
+        "4: excellent, precise and complete"
+      ]
+    }
+  }
+}

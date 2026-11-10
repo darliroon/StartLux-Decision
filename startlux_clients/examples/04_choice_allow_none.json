@@ -1,0 +1,15 @@
+{
+  "state": "Customer message: 'The app crashes every time I open the camera on my Pixel 8.'",
+  "questions": {
+    "team": {
+      "type": "choice",
+      "instructions": "Route this ticket to the matching team.",
+      "allow_none": true,
+      "criteria": {
+        "billing": "Payments, charges and refunds",
+        "shipping": "Delivery and tracking",
+        "account": "Password reset and account deletion"
+      }
+    }
+  }
+}

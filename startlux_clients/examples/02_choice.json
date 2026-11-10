@@ -1,0 +1,15 @@
+{
+  "state": "Support ticket: 'I was charged twice for order #4411 and the app still shows it as unpaid.'",
+  "questions": {
+    "team": {
+      "type": "choice",
+      "instructions": "Which team should handle this ticket?",
+      "criteria": {
+        "billing": "Payments, charges and refunds",
+        "shipping": "Delivery and tracking",
+        "technical": "App crashes, login and bugs",
+        "account": "Account deletion and profile changes"
+      }
+    }
+  }
+}
